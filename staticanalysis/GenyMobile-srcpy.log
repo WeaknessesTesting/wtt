@@ -1,0 +1,115 @@
+Flawfinder version 2.0.10, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+Examining GenyMobile-scrcpy/app/src/device.h
+Examining GenyMobile-scrcpy/app/src/events.h
+Examining GenyMobile-scrcpy/app/src/stream.h
+Examining GenyMobile-scrcpy/app/src/stream.c
+Examining GenyMobile-scrcpy/app/src/tiny_xpm.c
+Examining GenyMobile-scrcpy/app/src/screen.h
+Examining GenyMobile-scrcpy/app/src/device.c
+Examining GenyMobile-scrcpy/app/src/control_msg.c
+Examining GenyMobile-scrcpy/app/src/device_msg.h
+Examining GenyMobile-scrcpy/app/src/log.h
+Examining GenyMobile-scrcpy/app/src/android/input.h
+Examining GenyMobile-scrcpy/app/src/android/keycodes.h
+Examining GenyMobile-scrcpy/app/src/file_handler.h
+Examining GenyMobile-scrcpy/app/src/event_converter.c
+Examining GenyMobile-scrcpy/app/src/recorder.h
+Examining GenyMobile-scrcpy/app/src/tiny_xpm.h
+Examining GenyMobile-scrcpy/app/src/video_buffer.c
+Examining GenyMobile-scrcpy/app/src/cbuf.h
+Examining GenyMobile-scrcpy/app/src/scrcpy.h
+Examining GenyMobile-scrcpy/app/src/fps_counter.h
+Examining GenyMobile-scrcpy/app/src/input_manager.c
+Examining GenyMobile-scrcpy/app/src/compat.h
+Examining GenyMobile-scrcpy/app/src/command.c
+Examining GenyMobile-scrcpy/app/src/recorder.c
+Examining GenyMobile-scrcpy/app/src/file_handler.c
+Examining GenyMobile-scrcpy/app/src/buffer_util.h
+Examining GenyMobile-scrcpy/app/src/net.h
+Examining GenyMobile-scrcpy/app/src/str_util.c
+Examining GenyMobile-scrcpy/app/src/queue.h
+Examining GenyMobile-scrcpy/app/src/server.c
+Examining GenyMobile-scrcpy/app/src/scrcpy.c
+Examining GenyMobile-scrcpy/app/src/receiver.h
+Examining GenyMobile-scrcpy/app/src/receiver.c
+Examining GenyMobile-scrcpy/app/src/input_manager.h
+Examining GenyMobile-scrcpy/app/src/controller.c
+Examining GenyMobile-scrcpy/app/src/device_msg.c
+Examining GenyMobile-scrcpy/app/src/common.h
+Examining GenyMobile-scrcpy/app/src/screen.c
+Examining GenyMobile-scrcpy/app/src/str_util.h
+Examining GenyMobile-scrcpy/app/src/lock_util.h
+Examining GenyMobile-scrcpy/app/src/main.c
+Examining GenyMobile-scrcpy/app/src/controller.h
+Examining GenyMobile-scrcpy/app/src/decoder.h
+Examining GenyMobile-scrcpy/app/src/server.h
+Examining GenyMobile-scrcpy/app/src/net.c
+Examining GenyMobile-scrcpy/app/src/control_msg.h
+Examining GenyMobile-scrcpy/app/src/fps_counter.c
+Examining GenyMobile-scrcpy/app/src/video_buffer.h
+Examining GenyMobile-scrcpy/app/src/event_converter.h
+Examining GenyMobile-scrcpy/app/src/decoder.c
+Examining GenyMobile-scrcpy/app/src/command.h
+Examining GenyMobile-scrcpy/app/src/sys/win/command.c
+Examining GenyMobile-scrcpy/app/src/sys/win/net.c
+Examining GenyMobile-scrcpy/app/src/sys/unix/command.c
+Examining GenyMobile-scrcpy/app/src/sys/unix/net.c
+Examining GenyMobile-scrcpy/app/tests/test_cbuf.c
+Examining GenyMobile-scrcpy/app/tests/test_control_msg_serialize.c
+Examining GenyMobile-scrcpy/app/tests/test_strutil.c
+Examining GenyMobile-scrcpy/app/tests/test_queue.c
+Examining GenyMobile-scrcpy/app/tests/test_device_msg_deserialize.c
+
+FINAL RESULTS:
+
+GenyMobile-scrcpy/app/src/sys/unix/command.c:115:  [5] (race) readlink:
+  This accepts filename arguments; if an attacker can move those files or
+  change the link content, a race condition results. Also, it does not
+  terminate with ASCII NUL. (CWE-362, CWE-20). Reconsider approach.
+GenyMobile-scrcpy/app/src/command.c:107:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+GenyMobile-scrcpy/app/src/command.c:116:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+GenyMobile-scrcpy/app/src/command.c:126:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+GenyMobile-scrcpy/app/src/device.c:18:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+GenyMobile-scrcpy/app/src/scrcpy.c:268:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+GenyMobile-scrcpy/app/src/server.c:121:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+GenyMobile-scrcpy/app/src/server.c:122:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+GenyMobile-scrcpy/app/src/command.c:18:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+GenyMobile-scrcpy/app/src/main.c:343:  [3] (buffer) getopt_long:
+  Some older implementations do not protect against internal buffer overflows
+  (CWE-120, CWE-20). Check implementation on installation, or limit the size
+  of all string inputs.
+GenyMobile-scrcpy/app/src/server.c:23:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+
+ANALYSIS SUMMARY:
+
+Hits = 12
+Lines analyzed = 8217 in approximately 0.12 seconds (67679 lines/second)
+Physical Source Lines of Code (SLOC) = 5724
+Hits@level = [0]  13 [1]   9 [2]  13 [3]   3 [4]   8 [5]   1
+Hits@level+ = [0+]  47 [1+]  34 [2+]  25 [3+]  12 [4+]   9 [5+]   1
+Hits/KSLOC@level+ = [0+] 8.21104 [1+] 5.9399 [2+] 4.36758 [3+] 2.09644 [4+] 1.57233 [5+] 0.174703
+Minimum risk level = 3
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

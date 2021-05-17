@@ -1,0 +1,60 @@
+Flawfinder version 2.0.10, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+Examining libomemo/test/test_crypto.c
+Examining libomemo/test/test_libomemo.c
+Examining libomemo/test/test_storage.c
+Examining libomemo/src/libomemo.h
+Examining libomemo/src/libomemo_storage.h
+Examining libomemo/src/libomemo_storage.c
+Examining libomemo/src/libomemo_crypto.h
+Examining libomemo/src/libomemo.c
+Examining libomemo/src/libomemo_crypto.c
+Examining libomemo/step_source/Files/test_libomemo_rtc.c
+Examining libomemo/step_source/Files/test_libomemo_ft.c
+
+FINAL RESULTS:
+
+libomemo/step_source/Files/test_libomemo_ft.c:25:  [5] (buffer) gets:
+  Does not check for buffer overflows (CWE-120, CWE-20). Use fgets() instead.
+libomemo/src/libomemo.c:456:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:458:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:615:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:623:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:948:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:956:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libomemo/src/libomemo.c:399:  [3] (random) g_random_int_range:
+  This function is not sufficiently random for security-related functions
+  such as key and nonce creation (CWE-327). Use a more secure technique for
+  acquiring random values.
+
+ANALYSIS SUMMARY:
+
+Hits = 8
+Lines analyzed = 4523 in approximately 0.09 seconds (49436 lines/second)
+Physical Source Lines of Code (SLOC) = 3098
+Hits@level = [0]   6 [1]  10 [2]   4 [3]   1 [4]   6 [5]   1
+Hits@level+ = [0+]  28 [1+]  22 [2+]  12 [3+]   8 [4+]   7 [5+]   1
+Hits/KSLOC@level+ = [0+] 9.03809 [1+] 7.10136 [2+] 3.87347 [3+] 2.58231 [4+] 2.25952 [5+] 0.322789
+Minimum risk level = 3
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

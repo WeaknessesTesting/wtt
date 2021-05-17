@@ -1,0 +1,82 @@
+Flawfinder version 2.0.10, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+Examining libexpat/expat/lib/expat_external.h
+Examining libexpat/expat/lib/latin1tab.h
+Examining libexpat/expat/lib/xmltok_impl.c
+Examining libexpat/expat/lib/winconfig.h
+Examining libexpat/expat/lib/xmlparse.c
+Examining libexpat/expat/lib/xmltok.h
+Examining libexpat/expat/lib/xmltok_ns.c
+Examining libexpat/expat/lib/siphash.h
+Examining libexpat/expat/lib/internal.h
+Examining libexpat/expat/lib/expat.h
+Examining libexpat/expat/lib/utf8tab.h
+Examining libexpat/expat/lib/ascii.h
+Examining libexpat/expat/lib/xmltok_impl.h
+Examining libexpat/expat/lib/asciitab.h
+Examining libexpat/expat/lib/iasciitab.h
+Examining libexpat/expat/lib/xmlrole.c
+Examining libexpat/expat/lib/xmlrole.h
+Examining libexpat/expat/lib/nametab.h
+Examining libexpat/expat/lib/xmltok.c
+Examining libexpat/expat/expat_config.h
+Examining libexpat/expat/gennmtab/gennmtab.c
+Examining libexpat/expat/examples/outline.c
+Examining libexpat/expat/examples/elements.c
+Examining libexpat/expat/fuzz/xml_parsebuffer_fuzzer.c
+Examining libexpat/expat/fuzz/xml_parse_fuzzer.c
+Examining libexpat/expat/xmlwf/codepage.c
+Examining libexpat/expat/xmlwf/xmlfile.h
+Examining libexpat/expat/xmlwf/readfilemap.c
+Examining libexpat/expat/xmlwf/filemap.h
+Examining libexpat/expat/xmlwf/xmlfile.c
+Examining libexpat/expat/xmlwf/xmlmime.h
+Examining libexpat/expat/xmlwf/xmltchar.h
+Examining libexpat/expat/xmlwf/win32filemap.c
+Examining libexpat/expat/xmlwf/codepage.h
+Examining libexpat/expat/xmlwf/xmlwf.c
+Examining libexpat/expat/xmlwf/ct.c
+Examining libexpat/expat/xmlwf/unixfilemap.c
+Examining libexpat/expat/xmlwf/xmlmime.c
+Examining libexpat/expat/tests/minicheck.h
+Examining libexpat/expat/tests/memcheck.h
+Examining libexpat/expat/tests/minicheck.c
+Examining libexpat/expat/tests/memcheck.c
+Examining libexpat/expat/tests/structdata.h
+Examining libexpat/expat/tests/runtests.c
+Examining libexpat/expat/tests/runtestspp.cpp
+Examining libexpat/expat/tests/chardata.c
+Examining libexpat/expat/tests/structdata.c
+Examining libexpat/expat/tests/chardata.h
+Examining libexpat/expat/tests/benchmark/benchmark.c
+
+FINAL RESULTS:
+
+libexpat/expat/examples/outline.c:64:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libexpat/expat/tests/runtests.c:126:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+libexpat/expat/tests/runtests.c:2361:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+libexpat/expat/lib/xmlparse.c:802:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+
+ANALYSIS SUMMARY:
+
+Hits = 4
+Lines analyzed = 30723 in approximately 0.65 seconds (47546 lines/second)
+Physical Source Lines of Code (SLOC) = 24195
+Hits@level = [0]  41 [1] 267 [2]  50 [3]   1 [4]   3 [5]   0
+Hits@level+ = [0+] 362 [1+] 321 [2+]  54 [3+]   4 [4+]   3 [5+]   0
+Hits/KSLOC@level+ = [0+] 14.9618 [1+] 13.2672 [2+] 2.23187 [3+] 0.165323 [4+] 0.123993 [5+]   0
+Minimum risk level = 3
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

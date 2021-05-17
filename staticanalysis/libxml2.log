@@ -1,0 +1,451 @@
+Flawfinder version 2.0.10, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+Examining libxml2/debugXML.c
+Examining libxml2/nanohttp.c
+Examining libxml2/xmlmemory.c
+Examining libxml2/enc.h
+Examining libxml2/macos/src/XMLTestPrefix.h
+Examining libxml2/macos/src/config-mac.h
+Examining libxml2/macos/src/XMLTestPrefix2.h
+Examining libxml2/macos/src/macos_main.c
+Examining libxml2/win32/wince/wincecompat.h
+Examining libxml2/win32/wince/wincecompat.c
+Examining libxml2/win32/VC10/config.h
+Examining libxml2/SAX.c
+Examining libxml2/testOOMlib.h
+Examining libxml2/SAX2.c
+Examining libxml2/xmlregexp.c
+Examining libxml2/encoding.c
+Examining libxml2/testlimits.c
+Examining libxml2/include/win32config.h
+Examining libxml2/include/wsockcompat.h
+Examining libxml2/include/libxml/xmlwriter.h
+Examining libxml2/include/libxml/xmlmodule.h
+Examining libxml2/include/libxml/threads.h
+Examining libxml2/include/libxml/parserInternals.h
+Examining libxml2/include/libxml/nanohttp.h
+Examining libxml2/include/libxml/xpathInternals.h
+Examining libxml2/include/libxml/parser.h
+Examining libxml2/include/libxml/xlink.h
+Examining libxml2/include/libxml/catalog.h
+Examining libxml2/include/libxml/xpointer.h
+Examining libxml2/include/libxml/entities.h
+Examining libxml2/include/libxml/xmlwin32version.h
+Examining libxml2/include/libxml/xinclude.h
+Examining libxml2/include/libxml/list.h
+Examining libxml2/include/libxml/schemasInternals.h
+Examining libxml2/include/libxml/tree.h
+Examining libxml2/include/libxml/valid.h
+Examining libxml2/include/libxml/nanoftp.h
+Examining libxml2/include/libxml/xmlerror.h
+Examining libxml2/include/libxml/encoding.h
+Examining libxml2/include/libxml/xmlschemas.h
+Examining libxml2/include/libxml/xmlexports.h
+Examining libxml2/include/libxml/uri.h
+Examining libxml2/include/libxml/xmlsave.h
+Examining libxml2/include/libxml/pattern.h
+Examining libxml2/include/libxml/DOCBparser.h
+Examining libxml2/include/libxml/xmlstring.h
+Examining libxml2/include/libxml/xmlversion.h
+Examining libxml2/include/libxml/c14n.h
+Examining libxml2/include/libxml/relaxng.h
+Examining libxml2/include/libxml/SAX.h
+Examining libxml2/include/libxml/HTMLtree.h
+Examining libxml2/include/libxml/xmlregexp.h
+Examining libxml2/include/libxml/globals.h
+Examining libxml2/include/libxml/schematron.h
+Examining libxml2/include/libxml/xpath.h
+Examining libxml2/include/libxml/SAX2.h
+Examining libxml2/include/libxml/HTMLparser.h
+Examining libxml2/include/libxml/dict.h
+Examining libxml2/include/libxml/xmlschemastypes.h
+Examining libxml2/include/libxml/xmlIO.h
+Examining libxml2/include/libxml/xmlautomata.h
+Examining libxml2/include/libxml/xmlunicode.h
+Examining libxml2/include/libxml/xmlmemory.h
+Examining libxml2/include/libxml/xmlreader.h
+Examining libxml2/include/libxml/debugXML.h
+Examining libxml2/include/libxml/chvalid.h
+Examining libxml2/include/libxml/hash.h
+Examining libxml2/xmlsave.c
+Examining libxml2/xmlwriter.c
+Examining libxml2/testXPath.c
+Examining libxml2/testSAX.c
+Examining libxml2/xmlschemas.c
+Examining libxml2/testC14N.c
+Examining libxml2/pattern.c
+Examining libxml2/schematron.c
+Examining libxml2/testHTML.c
+Examining libxml2/c14n.c
+Examining libxml2/xzlib.c
+Examining libxml2/xmlschemastypes.c
+Examining libxml2/error.c
+Examining libxml2/buf.h
+Examining libxml2/runtest.c
+Examining libxml2/triostr.c
+Examining libxml2/xmlIO.c
+Examining libxml2/testAutomata.c
+Examining libxml2/testOOMlib.c
+Examining libxml2/xmllint.c
+Examining libxml2/uri.c
+Examining libxml2/trio.h
+Examining libxml2/xlink.c
+Examining libxml2/trionan.h
+Examining libxml2/xmlstring.c
+Examining libxml2/xmlcatalog.c
+Examining libxml2/triop.h
+Examining libxml2/parser.c
+Examining libxml2/legacy.c
+Examining libxml2/triodef.h
+Examining libxml2/hash.c
+Examining libxml2/relaxng.c
+Examining libxml2/testThreads.c
+Examining libxml2/nanoftp.c
+Examining libxml2/testapi.c
+Examining libxml2/triostr.h
+Examining libxml2/threads.c
+Examining libxml2/runsuite.c
+Examining libxml2/testReader.c
+Examining libxml2/xpointer.c
+Examining libxml2/xmlmodule.c
+Examining libxml2/elfgcchack.h
+Examining libxml2/catalog.c
+Examining libxml2/os400/rpgsupport.h
+Examining libxml2/os400/iconv/bldcsndfa/bldcsndfa.c
+Examining libxml2/os400/iconv/iconv.c
+Examining libxml2/os400/iconv/iconv.h
+Examining libxml2/os400/iconv/ianatables.c
+Examining libxml2/os400/wrappers.c
+Examining libxml2/os400/transcode.h
+Examining libxml2/os400/dlfcn/dlfcn.c
+Examining libxml2/os400/dlfcn/dlfcn.h
+Examining libxml2/os400/transcode.c
+Examining libxml2/os400/xmllintcl.c
+Examining libxml2/os400/wrappers.h
+Examining libxml2/os400/xmlcatlgcl.c
+Examining libxml2/os400/libxmlmain.c
+Examining libxml2/os400/rpgsupport.c
+Examining libxml2/buf.c
+Examining libxml2/xmlreader.c
+Examining libxml2/testdict.c
+Examining libxml2/test_muniz.c
+Examining libxml2/xinclude.c
+Examining libxml2/testOOM.c
+Examining libxml2/testrecurse.c
+Examining libxml2/HTMLparser.c
+Examining libxml2/xzlib.h
+Examining libxml2/xmlunicode.c
+Examining libxml2/testchar.c
+Examining libxml2/list.c
+Examining libxml2/trio.c
+Examining libxml2/xpath.c
+Examining libxml2/HTMLtree.c
+Examining libxml2/valid.c
+Examining libxml2/trionan.c
+Examining libxml2/entities.c
+Examining libxml2/testURI.c
+Examining libxml2/doc/examples/xpath2.c
+Examining libxml2/doc/examples/tree2.c
+Examining libxml2/doc/examples/parse2.c
+Examining libxml2/doc/examples/parse4.c
+Examining libxml2/doc/examples/reader2.c
+Examining libxml2/doc/examples/reader3.c
+Examining libxml2/doc/examples/tree1.c
+Examining libxml2/doc/examples/xpath1.c
+Examining libxml2/doc/examples/parse3.c
+Examining libxml2/doc/examples/io1.c
+Examining libxml2/doc/examples/parse1.c
+Examining libxml2/doc/examples/reader1.c
+Examining libxml2/doc/examples/testWriter.c
+Examining libxml2/doc/examples/reader4.c
+Examining libxml2/doc/examples/io2.c
+Examining libxml2/doc/tutorial/includeconvert.c
+Examining libxml2/doc/tutorial/includeaddkeyword.c
+Examining libxml2/doc/tutorial/includegetattribute.c
+Examining libxml2/doc/tutorial/includeaddattribute.c
+Examining libxml2/doc/tutorial/includexpath.c
+Examining libxml2/doc/tutorial/includekeyword.c
+Examining libxml2/parserInternals.c
+Examining libxml2/tree.c
+Examining libxml2/testSchemas.c
+Examining libxml2/DOCBparser.c
+Examining libxml2/testRelax.c
+Examining libxml2/timsort.h
+Examining libxml2/testdso.c
+Examining libxml2/runxmlconf.c
+Examining libxml2/globals.c
+Examining libxml2/testRegexp.c
+Examining libxml2/testModule.c
+Examining libxml2/example/gjobread.c
+Examining libxml2/python/libxml2-py.h
+Examining libxml2/python/libxml2-export.c
+Examining libxml2/python/types.c
+Examining libxml2/python/libxml.c
+Examining libxml2/python/libxml2-py.c
+Examining libxml2/python/libxml_wrap.h
+Examining libxml2/libxml.h
+Examining libxml2/dict.c
+Examining libxml2/config.h
+Examining libxml2/save.h
+Examining libxml2/rngparser.c
+Examining libxml2/chvalid.c
+
+FINAL RESULTS:
+
+libxml2/os400/dlfcn/dlfcn.c:466:  [5] (race) readlink:
+  This accepts filename arguments; if an attacker can move those files or
+  change the link content, a race condition results. Also, it does not
+  terminate with ASCII NUL. (CWE-362, CWE-20). Reconsider approach.
+libxml2/HTMLparser.c:6387:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/HTMLparser.c:6388:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/error.c:36:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/error.c:78:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/example/gjobread.c:26:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/include/win32config.h:98:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/libxml.h:46:  [4] (format) snprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/libxml.h:47:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/os400/dlfcn/dlfcn.c:288:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/dlfcn/dlfcn.c:689:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/dlfcn/dlfcn.c:695:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/dlfcn/dlfcn.c:885:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/dlfcn/dlfcn.c:941:  [4] (buffer) sprintf:
+  Does not check for buffer overflows (CWE-120). Use sprintf_s, snprintf, or
+  vsnprintf.
+libxml2/os400/iconv/bldcsndfa/bldcsndfa.c:954:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/iconv/bldcsndfa/bldcsndfa.c:957:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/os400/iconv/bldcsndfa/bldcsndfa.c:962:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/python/libxml.c:1143:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/runsuite.c:171:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runsuite.c:178:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runsuite.c:191:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/runtest.c:257:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/runtest.c:279:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/runtest.c:1357:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runtest.c:1380:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runtest.c:1403:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runxmlconf.c:116:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/runxmlconf.c:123:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testHTML.c:533:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testHTML.c:553:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testHTML.c:573:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testOOM.c:140:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/testSAX.c:131:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testSAX.c:165:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testSAX.c:189:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testSAX.c:786:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testSAX.c:809:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/testSAX.c:832:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/test_muniz.c:29:  [4] (buffer) scanf:
+  The scanf() family's %s operation, without a limit specification, permits
+  buffer overflows (CWE-120, CWE-20). Specify a limit to %s, or use a
+  different input function.
+libxml2/testlimits.c:413:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/testrecurse.c:321:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/triostr.c:194:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/triostr.c:282:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/valid.c:1322:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/valid.c:1326:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/valid.c:5246:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/valid.c:5254:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/win32/VC10/config.h:97:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/win32/wince/wincecompat.h:47:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmllint.c:451:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmllint.c:485:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmllint.c:510:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmllint.c:640:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmllint.c:678:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmllint.c:714:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmllint.c:751:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmllint.c:1409:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmllint.c:1432:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmllint.c:1455:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+libxml2/xmlmemory.c:546:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/xmlreader.c:4757:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmlstring.c:558:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmlstring.c:584:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xmlwriter.c:4484:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+libxml2/xzlib.c:116:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+libxml2/xzlib.c:118:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+libxml2/xzlib.c:158:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+
+
+ANALYSIS SUMMARY:
+
+Hits = 62
+Lines analyzed = 336976 in approximately 4.68 seconds (72020 lines/second)
+Physical Source Lines of Code (SLOC) = 244100
+Hits@level = [0] 7207 [1] 233 [2] 222 [3]  28 [4]  68 [5]   1
+Hits@level+ = [0+] 7759 [1+] 552 [2+] 319 [3+]  97 [4+]  69 [5+]   1
+Hits/KSLOC@level+ = [0+] 31.7862 [1+] 2.26137 [2+] 1.30684 [3+] 0.397378 [4+] 0.282671 [5+] 0.00409668
+Minimum risk level = 3
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.

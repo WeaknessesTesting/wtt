@@ -1,0 +1,144 @@
+Flawfinder version 2.0.10, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 223
+Examining scripts/config/expr.c
+Examining scripts/config/qconf.cc
+Examining scripts/config/images.c
+Examining scripts/config/list.h
+Examining scripts/config/menu.c
+Examining scripts/config/util.c
+Examining scripts/config/confdata.c
+Examining scripts/config/lxdialog/dialog.h
+Examining scripts/config/lxdialog/yesno.c
+Examining scripts/config/lxdialog/checklist.c
+Examining scripts/config/lxdialog/util.c
+Examining scripts/config/lxdialog/menubox.c
+Examining scripts/config/lxdialog/inputbox.c
+Examining scripts/config/lxdialog/textbox.c
+Examining scripts/config/lkc_proto.h
+Examining scripts/config/symbol.c
+Examining scripts/config/conf.c
+Examining scripts/config/expr.h
+Examining scripts/config/qconf.h
+Examining scripts/config/lkc.h
+Examining scripts/config/mconf.c
+Examining scripts/mkhash.c
+
+FINAL RESULTS:
+
+
+scripts/config/confdata.c:104:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+scripts/config/confdata.c:107:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+scripts/config/lxdialog/inputbox.c:56:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+scripts/config/lxdialog/util.c:619:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+scripts/config/mconf.c:777:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+scripts/config/menu.c:26:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+scripts/config/menu.c:36:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+scripts/config/confdata.c:41:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+scripts/config/confdata.c:50:  [4] (format) vfprintf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+scripts/config/qconf.cc:1086:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+scripts/config/qconf.cc:1095:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+scripts/config/qconf.cc:1123:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+scripts/config/qconf.cc:1146:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+scripts/config/qconf.cc:1219:  [4] (format) sprintf:
+  Potential format string problem (CWE-134). Make format string constant.
+scripts/config/qconf.cc:1820:  [4] (format) printf:
+  If format strings can be influenced by an attacker, they can be exploited
+  (CWE-134). Use a constant for the format specification.
+scripts/config/symbol.c:684:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+scripts/config/symbol.c:912:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+scripts/config/symbol.c:915:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+scripts/config/util.c:110:  [4] (buffer) strcat:
+  Does not check for buffer overflows when concatenating to destination
+  [MS-banned] (CWE-120). Consider using strcat_s, strncat, strlcat, or
+  snprintf (warning: strncat is easily misused).
+scripts/config/util.c:120:  [4] (format) vsnprintf:
+  If format strings can be influenced by an attacker, they can be exploited,
+  and note that sprintf variations do not always \0-terminate (CWE-134). Use
+  a constant for the format specification.
+scripts/config/conf.c:506:  [3] (buffer) getopt_long:
+  Some older implementations do not protect against internal buffer overflows
+  (CWE-120, CWE-20). Check implementation on installation, or limit the size
+  of all string inputs.
+scripts/config/conf.c:532:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+scripts/config/conf.c:541:  [3] (random) srand:
+  This function is not sufficiently random for security-related functions
+  such as key and nonce creation (CWE-327). Use a more secure technique for
+  acquiring random values.
+scripts/config/conf.c:617:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+scripts/config/lkc.h:42:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+scripts/config/symbol.c:1381:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+scripts/config/util.c:65:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+scripts/mkhash.c:800:  [3] (buffer) getopt:
+  Some older implementations do not protect against internal buffer overflows
+  (CWE-120, CWE-20). Check implementation on installation, or limit the size
+  of all string inputs.
+
+ANALYSIS SUMMARY:
+
+Hits = 27
+Lines analyzed = 13044 in approximately 0.21 seconds (62452 lines/second)
+Physical Source Lines of Code (SLOC) = 8144
+Hits@level = [0] 114 [1]  37 [2]  20 [3]   8 [4]  18 [5]   1
+Hits@level+ = [0+] 198 [1+]  84 [2+]  47 [3+]  27 [4+]  19 [5+]   1
+Hits/KSLOC@level+ = [0+] 24.3124 [1+] 10.3143 [2+] 5.77112 [3+] 3.31532 [4+] 2.33301 [5+] 0.12279
+Minimum risk level = 3
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.
