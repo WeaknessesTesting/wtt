@@ -28,9 +28,9 @@ Instrument the main.sh file as the example presented in the File folder.
 
 ## Links
 
-- **Website**: https://weaknessestestingtool.github.io/wtt/
+- **Website**: https://weaknessestesting.github.io/wtt-page/
 
-- **GitHub**: https://github.com/WeaknessesTestingTool/sbes-wtt
+- **GitHub**: https://github.com/WeaknessesTesting/wtt
 
 ## Author
  -
